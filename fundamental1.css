@@ -1,0 +1,242 @@
+canvas {
+    display: block;
+    
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    position: fixed; /* Fixa no fundo */
+    width: 100vw; /* 100% da largura da tela */
+    height: 100vh; /* 100% da altura da tela */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Envia para trás de todo o conteúdo */
+    background-color: #268026;
+}
+-- stats.js ---- */
+  .count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13e8e9;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  .js-count-particles {
+    font-size: 1.1em;
+  }
+  #stats,
+  .count-particles {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  #stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  .count-particles {
+    border-radius: 0 0 3px 3px;
+  }
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 100px;
+    background-color: #29b124b5; /* Azul escuro principal */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: -20px;
+}
+
+h1, h2 {
+    color: #1ea400;
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#paginaSelect {
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#email {
+    text-align: center;
+    background: #ffffff;
+    margin: 40px auto;
+    width: 900px;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #203d72;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #545050;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #434141;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+table th {
+    background-color:  #87d844;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    margin-right: 5px;
+}
+.email-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.email-item input[type="checkbox"] {
+    margin-right: 5px;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    #paginaSelect {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    #email {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    table th, table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #paginaSelect {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    table th, table td {
+        padding: 6px;
+    }
+}
